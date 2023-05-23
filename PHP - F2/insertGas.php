@@ -2,7 +2,7 @@
 
 require_once "conn.php";
 
-$table = 'dadoslucas';
+$table = 'dadosmatheus';
 $ano = filter_input(INPUT_POST, 'year');
 $gasolina = filter_input(INPUT_POST, 'gasoline');
 $salario = filter_input(INPUT_POST, 'sallary');

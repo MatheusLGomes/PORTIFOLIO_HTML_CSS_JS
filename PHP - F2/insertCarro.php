@@ -4,9 +4,9 @@ require_once "conn.php";
 
 $table = filter_input(INPUT_POST, 'table');
 $ano = filter_input(INPUT_POST, 'ano');
-$valor = filter_input(INPUT_POST, 'valor');
-$nomeDoCarro = filter_input(INPUT_POST, 'carro');
-$query = "INSERT INTO $table (anomatheus, valormatheus, carromatheus) VALUES(:ANO, VALOR, CARRO)";
+$salario = filter_input(INPUT_POST, 'salario');
+$precoDoCarro = filter_input(INPUT_POST, 'precoDocarro');
+$query = "INSERT INTO $table (anomatheus, salariormatheus, precocarromatheus) VALUES(:ANO, :SALARIO, :PRECODoCARRO)";
 
 
 
@@ -16,8 +16,8 @@ $stmt = $conn->prepare($query);
 
 //trocar
 $stmt->bindValue (':ANO', $ano);
-$stmt->bindValue(':VALOR', $valor);
-$stmt->bindValue(':CARRO', $carro);
+$stmt->bindValue(':SALARIO', $salario);
+$stmt->bindValue(':PRECOCARRO', $precoDocarro);
 
 
 //executar

@@ -1,7 +1,7 @@
 <?php
 
 define('HOSTNAME', 'localhost');
-define('DBNAME', 'datalucas');
+define('DBNAME', 'datamatheus');
 define('USER', 'root');
 define('PASS', '');
 

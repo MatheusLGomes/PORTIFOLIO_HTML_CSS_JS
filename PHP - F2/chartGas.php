@@ -1,7 +1,7 @@
 <?php
 
 require_once "./conn.php";
-$table = "dadoslucas";
+$table = "dadosmatheus";
 $query =  "SELECT * FROM $table";
 $stmt = $conn->prepare($query);
 
@@ -20,9 +20,9 @@ $list= $stmt->fetchAll(PDO::FETCH_ASSOC);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Ano', 'Salário', 'Gasolina'],
+          ['Ano', 'Gasolina', 'Salario'],
           <?php foreach($list as $user):?>
-          ['<?=$user['anomatheus'];?>', <?=$user['salariomatheus'];?>,<?=$user['gasolinamatheus'];?>],
+          ['<?=$user['anomatheus'];?>', <?=$user['gasolinamatheus'];?>,<?=$user['salariomatheus'];?>],
           <?php endforeach; ?>
         ]);
       

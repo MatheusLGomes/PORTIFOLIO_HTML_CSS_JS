@@ -20,19 +20,19 @@
     <h5>SALÁRIO X CARRO<h5>
 
     <form action="insertCarro.php" method="post">
-        <!-- <div  class="form-floating mb-3">
+         <div  class="form-floating mb-3">
             <label for="year">Insira o ano: </label>
             <input type="text" class="form-control" style="height: 80px" name="year" id="year">
-        </div> -->
+        </div> 
         
-        <!-- <div class="form-floating mb-3">
+       <div class="form-floating mb-3">
             <label for="sallary" >Salário no respectivo ano: </label>
             <input type="text" class="form-control" style="height: 80px" name="sallary" id="sallary">
         </div>
         <div  class="form-floating mb-3">
             <label for="gasoline">Quantos litros de gasolina por salário? </label>
             <input type="text" class="form-control" style="height: 80px" name="gasoline" id="gasoline">
-        </div> -->
+        </div> 
         
          <div>
             <button type="submit" class="btn btn-primary mt-2">Cadastrar informações</button>
